@@ -6,8 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
-    env:
-      DEPLOY_ENV: PROD
     permissions:
       contents: write
     concurrency:
