@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const basePath = process.env.NODE_ENV === "production" ? "/nextjsApp" : "";
+const basePath = process.env.DEPLOY_ENV === "PROD" ? "/nextjsApp" : "";
 
 const nextConfig: NextConfig = {
   images: {
