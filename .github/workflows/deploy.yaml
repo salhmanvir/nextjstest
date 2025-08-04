@@ -28,8 +28,6 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-        env:
-          DEPLOY_ENV: PROD
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
