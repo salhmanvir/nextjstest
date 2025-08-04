@@ -26,9 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Debug env vars
-        run: printenv | grep DEPLOY_ENV
-
       - run: npm ci
       - run: npm run build
 
